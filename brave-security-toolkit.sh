@@ -196,5 +196,82 @@ done
 # rm -rf "$scriptpath"
 echo -e "[*] Deleted the tmp directory."
 
+# Function that installs Burp cert
+install_burp_cert() {
+  echo -n "[@] Would you like to download the Burp Suite certificate? [y/n]. (Note: Burp Suite should be running on your machine): "
+  read -r burp_cert_answer
+  burp_cert_answer=$(echo -n "$burp_cert_answer" | tr '[:upper:]' '[:lower:]')
+
+  if [[ $burp_cert_answer == 'y' || $burp_cert_answer == 'yes' ]]; then
+    echo -n "[@] Enter the Burp Suite proxy listener's port (Default: 8080): "
+    read -r burp_port
+
+    if [[ -z $burp_port ]]; then
+      burp_port='8080'
+    fi
+
+    wget "http://127.0.0.1:$burp_port/cert" -o /dev/null -O "$scriptpath/cacert.der"
+
+    if [ -s "$scriptpath/cacert.der" ]; then
+      echo -e "[*] Burp Suite certificate has been downloaded and can be found at [$scriptpath/cacert.der]."
+      echo -e "[*] Installing the certificate to Brave browser."
+
+      # Command to install the certificate to Brave (assuming Linux).
+      certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n "Burp Suite Certificate" -i "$scriptpath/cacert.der"
+
+      echo -e "[*] Certificate installation completed. Please restart Brave browser to apply the changes."
+    else
+      echo "[!] Error: The Burp Suite certificate was not able to be downloaded. You need to perform this task manually."
+    fi
+  fi
+}
+
+# Function that installs ZAP cert
+install_zap_cert() {
+  echo -n "[@] Would you like to download the OWASP ZAP Proxy certificate? [y/n]. (Note: OWASP ZAP Proxy should be running on your machine): "
+  read -r zap_cert_answer
+  zap_cert_answer=$(echo -n "$zap_cert_answer" | tr '[:upper:]' '[:lower:]')
+
+  if [[ $zap_cert_answer == 'y' || $zap_cert_answer == 'yes' ]]; then
+    echo -n "[@] Enter the OWASP ZAP Proxy listener's port (Default: 8080): "
+    read -r zap_port
+
+    if [[ -z $zap_port ]]; then
+      zap_port='8080'
+    fi
+
+    wget "http://localhost:$zap_port/OTHER/core/other/ca/" -o /dev/null -O "$scriptpath/zaprootca.pem"
+
+    if [ -s "$scriptpath/zaprootca.pem" ]; then
+      echo -e "[*] OWASP ZAP Proxy certificate has been downloaded and can be found at [$scriptpath/zaprootca.pem]."
+      echo -e "[*] Installing the certificate to the system."
+
+      # Command to install the certificate to the system's trusted root store.
+      sudo cp "$scriptpath/zaprootca.pem" /usr/local/share/ca-certificates/zaprootca.crt
+      sudo update-ca-certificates
+
+      echo -e "[*] Certificate installation completed. Please restart your applications to apply the changes."
+    else
+      echo "[!] Error: The OWASP ZAP Proxy certificate was not able to be downloaded. You need to perform this task manually."
+    fi
+  fi
+}
+
+# Prompt user whether they want to install both or individually 
+install_certificates() {
+  echo -n "[@] Would you like to install any certificates? [y/n]: "
+  read -r install_answer
+  install_answer=$(echo -n "$install_answer" | tr '[:upper:]' '[:lower:]')
+
+  if [[ $install_answer == 'y' || $install_answer == 'yes' ]]; then
+    install_burp_cert
+    install_zap_cert
+  else
+    echo "No certificates will be installed. Exiting."
+  fi
+}
+
+install_certificates
+
 echo -e "[**] Brave Security Toolkit is finished\n"
 echo -e "Have a nice day! - Mazin Ahmed"
