@@ -7,27 +7,33 @@
 # The script mainly focuses on downloading the required extensions for web application penetration testing.
 
 ## Version:
-# v0.7
+# v1.0
 
 ## Homepage:
-# https://github.com/mazen160/Brave-Security-Toolkit
+# https://github.com/0xd3d5ec/brave-security-toolkit
 
 ## Author:
-# Mazin Ahmed <mazin AT mazinahmed DOT net>
+# D4rkw1ng
 #################################################################################
 
 logo() {
-    echo ' ______ _ ____ _____ _ __ ______ __ __ __ _ __ '
-    echo '/ ____/(_)_____ ___ / __/____ _ __ / ___/ ___ _____ __ __ _____ (_)/ /_ __ __ /_ __/____ ____ '
-    echo '/ // //_/ (_)/ /_'
-    echo '/ __/ / // ___// _ \ / /_ / __ \ | |/_/ \__ \ / _ \ | '_ \| '_ \` _ \ / _ \/ _\` | '
-    echo '/ __/ / // / / __// __// /_/ /_> < ___/ // __// /__ / /_/ // / / // /_ / /_/ / / / / /_/ // /_/ // // /| | / // /_'
-    echo '/_/ /_//_/ \___//_/ \____//_/|_| /____/ \___/ \___/ \__,_//_/ /_/ \__/ \__, / /_/ \____/ \____//_//_/ |_|/_/ \__/'
-    echo ' /____/'
+    echo ''    
+    echo '       ____                           _____                      _ __           ______            __   _ __   '
+    echo '      / __ )_________ __   _____     / ___/___  _______  _______(_) /___  __   /_  __/___  ____  / /__(_) /_  '
+    echo '     / __  / ___/ __ `/ | / / _ \    \__ \/ _ \/ ___/ / / / ___/ / __/ / / /    / / / __ \/ __ \/ //_/ / __/  '
+    echo '    / /_/ / /  / /_/ /| |/ /  __/   ___/ /  __/ /__/ /_/ / /  / / /_/ /_/ /    / / / /_/ / /_/ / ,< / / /_    '
+    echo '   /_____/_/   \__,_/ |___/\___/   /____/\___/\___/\__,_/_/  /_/\__/\__, /    /_/  \____/\____/_/|_/_/\__/    '
+    echo '                                                                  /____/                                      ' 
+    echo '      __                 ____ __       __           ___                                                       '
+    echo '     / /_  __  __   ____/ / // / _____/ /___      _<  /___  ____ _                                            '
+    echo '    / __ \/ / / /  / __  / // /_/ ___/ //_/ | /| / / / __ \/ __ `/                                            '
+    echo '   / /_/ / /_/ /  / /_/ /__  __/ /  / ,<  | |/ |/ / / / / / /_/ /                                             '
+    echo '  /_.___/\__, /   \__,_/  /_/ /_/  /_/|_| |__/|__/_/_/ /_/\__, /                                              ' 
+    echo '        /____/                                           /____/                                               '
     echo ""
-    echo "v0.7"
-    echo "www.mazinahmed.net"
-    echo "twitter.com/mazen160"
+    echo "v1.0"
+    echo "github.com/0xd3d5ec"
+    echo "twitter.com/d4rkw1ng101010"
 }
 
 logo
@@ -274,4 +280,4 @@ install_certificates() {
 install_certificates
 
 echo -e "[**] Brave Security Toolkit is finished\n"
-echo -e "Have a nice day! - Mazin Ahmed"
+echo -e "Have a nice day!"
