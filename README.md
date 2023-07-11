@@ -1,5 +1,5 @@
 # Brave Security Toolkit
-A tool that transforms Brave browser into a penetration testing suite. Take note this tool could also work with other chrome based browsers.
+A tool that transforms Brave browser into a penetration testing suite. Take note this tool could also work with other chrome based browsers. Some tools have been removed since brave browser contains switches and internal tools that makes them obsolete.
 
 # Why & How?
 Brave security toolkit is a as close as a direct relfection to firefox-security-toolkit as possible with other corresponding extensions for those who prefer to work with chrome based browsers when doing pentests or bug hunting. This tool was developed to speed up the setup process and let the user start right away with work without any hassle. It installs trusted tools by the community and setups the certificate installation process for burp and zap for the user if the user so wishes.
