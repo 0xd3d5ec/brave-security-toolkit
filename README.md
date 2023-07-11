@@ -1,5 +1,5 @@
 # Brave Security Toolkit
-A tool that transforms Brave browser into a penetration testing suite. Take note this tools could also work with other chrome based browsers.
+A tool that transforms Brave browser into a penetration testing suite. Take note this tool could also work with other chrome based browsers.
 
 # Why & How?
 
