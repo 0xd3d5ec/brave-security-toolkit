@@ -4,7 +4,7 @@ A tool that transforms Brave browser into a penetration testing suite.
 # Why & How?
 
 # Features
-- Installs most popular extensions used by the security community.
+- Installs most popular extensions used by the infosec community.
 - Prompt the user to install burpsuite certificate.
 - Prompt the user to install owasp zap proxy certificate.
 - Download large list of User-Agents for User-Agent Switcher extension.
@@ -15,6 +15,10 @@ Web-Application Penetration Testers, Information Security Learners, and basicall
 # Future Features
 
 # Compatibility
+- Unix/Linux
 
 # Usage
-bash ./Brave-security-toolkit.sh
+bash ./brave-security-toolkit.sh
+or 
+sudo chmod +x brave-security-tookit.sh
+./brave-security-toolkit.sh
