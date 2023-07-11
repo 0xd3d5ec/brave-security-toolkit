@@ -43,7 +43,7 @@ welcome() {
     echo -e "bash $0 run"
     echo -e "\n"
     echo -e '[%%] Available Extensions:'
-    echo '* Copy PlainText'
+    echo '* Copy as PlainText'
     echo '* CSRF spotter'
     echo '* Easy XSS'
     echo '* Flagfox'
@@ -104,17 +104,8 @@ echo '<!DOCTYPE HTML><html><center><head><h1>Installation is Finished</h1></head
 # Downloading packages.
 echo -e "[*] Downloading Extensions."
 
-# Copy PlainText
-wget "https://chrome.google.com/webstore/detail/copy-plaintext/gmlhoapdfopjljekcodlpgjbkfojgbon" -O "$scriptpath/copy_plaintext.crx" >/dev/null
-
-# CSRF spotter
-wget "https://chrome.google.com/webstore/detail/csrf-spotter/oillioinoelkjjiahdompkkidfancifn" -O "$scriptpath/csrf_spotter.crx" >/dev/null
-
-# Easy XSS
-wget "https://chrome.google.com/webstore/detail/easy-xss/bgaimlpbmidmhmlakgmihdmlibkclbbo" -O "$scriptpath/easy_xss.crx" >/dev/null
-
-# Flagfox
-wget "https://chrome.google.com/webstore/detail/flagfox/dnhjginlgincolmnpfamkgehimogifld" -O "$scriptpath/flagfox.crx" >/dev/null
+# Copy as PlainText
+wget "https://chrome.google.com/webstore/detail/copy-as-plain-text/hmjdnojobglgfjhfdeamomnjdlfcmogl" -O "$scriptpath/copy_as_plaintext.crx" >/dev/null
 
 # FoxyProxy Standard
 wget "https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaabfmlnjonogaaifnjlfnp" -O "$scriptpath/foxyproxy_standard.crx" >/dev/null
@@ -122,50 +113,38 @@ wget "https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaab
 # Google Dork Builder
 wget "https://chrome.google.com/webstore/detail/google-dork-builder/fhgdndg" -O "$scriptpath/google_dork_builder.crx" >/dev/null
 
-# HackBar V2
-wget "https://chrome.google.com/webstore/detail/hackbar-v2/ojemmdjdibcnddjbbggphcgnjemjkcdm" -O "$scriptpath/hackbar_v2.crx" >/dev/null
+# HackBar
+wget "https://chrome.google.com/webstore/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc" -O "$scriptpath/hackbar_v2.crx" >/dev/null
 
-# HackBar Quantum
-wget "https://chrome.google.com/webstore/detail/hackbar-quantum/gjobdineobjlaabbfjhbpipplmklblni" -O "$scriptpath/hackbar_quantum.crx" >/dev/null
-
-# Disable WebRTC
-wget "https://chrome.google.com/webstore/detail/disable-webrtc/nlfbmbojpeacfghkpbjhddihlkkiljbi" -O "$scriptpath/disable_webrtc.crx" >/dev/null
-
-# HTTP Header Live
-wget "https://chrome.google.com/webstore/detail/http-header-live/ephcjjkbbhjgkcampeioafkggmnmhofa" -O "$scriptpath/http_header_live.crx" >/dev/null
-
-# iMacros for Firefox
-wget "https://chrome.google.com/webstore/detail/imacros-for-firefox/cplklnmnlbnpmjogncfgfijoopmnlemp" -O "$scriptpath/imacros_for_firefox.crx" >/devnull
+# iMacros for Chrome
+wget "https://chrome.google.com/webstore/detail/imacros-for-chrome/cplklnmnlbnpmjogncfgfijoopmnlemp" -O "$scriptpath/imacros_for_firefox.crx" >/devnull
 
 # JSONView
-wget "https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc" -O "$scriptpath/jsonview.crx" >/dev/null
+wget "https://chrome.google.com/webstore/detail/jsonview/gmegofmjomhknnokphhckolhcffdaihd" -O "$scriptpath/jsonview.crx" >/dev/null
 
 # KNOXSS Community Edition
 wget "https://chrome.google.com/webstore/detail/knoxss-community-edition/gbnmlkhgliejablgippglbkpkmjgiahp" -O "$scriptpath/knoxss_community_edition.crx" >/dev/null
 
-# Resurrect Pages
-wget "https://chrome.google.com/webstore/detail/resurrect-pages/idehfgkpleioalbomehakkndmjlcdcln" -O "$scriptpath/resurrect_pages.crx" >/dev/null
+# Shodan
+wget "https://chrome.google.com/webstore/detail/shodan/jjalcfnidlmpjhdfepjhjbhnhkbgleap" -O "$scriptpath/shodanio.crx" >/dev/null
 
-# Shodan.io
-wget "https://chrome.google.com/webstore/detail/shodanio/lbmnjgmfmkjikjpchmfmgcigfohiopaa" -O "$scriptpath/shodanio.crx" >/dev/null
-
-# show-my-ip
-wget "https://chrome.google.com/webstore/detail/show-my-ip/emonjmjmgciaodnjfjmlpndhgebnopjc" -O "$scriptpath/show_my_ip.crx" >/dev/null
+# Show My IP Addresses (External and Local)
+wget "https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj" -O "$scriptpath/show_my_ip.crx" >/dev/null
 
 # User-Agent Switcher and Manager
-wget "https://chrome.google.com/webstore/detail/user-agent-switcher-and-m/pmjbhfmaphnpbehdanbjphdcniaelfie" -O "$scriptpath/user_agent_switcher_and_manager.crx" >/dev/null
+wget "https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg" -O "$scriptpath/user_agent_switcher_and_manager.crx" >/dev/null
 
 # Wappalyzer
-wget "https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg" -O "$scriptpath/wappalyzer.crx" >/dev/null
+wget "https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg" -O "$scriptpath/wappalyzer.crx" >/dev/null
 
 # Web Developer
 wget "https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm" -O "$scriptpath/web_developer.crx" >/dev/null
 
-# XML Viewer Plus
-wget "https://chrome.google.com/webstore/detail/xml-viewer-plus/kopilijnpidhomijpdfcacedbpifmnon" -O "$scriptpath/xml_viewer_plus.crx" >/dev/null
+# XML Plus
+wget "https://chrome.google.com/webstore/detail/xml-plus/jmhicemblbmkcbonbhkjmflehkmkiidj" -O "$scriptpath/xml_viewer_plus.crx" >/dev/null
 
 # HackTools
-wget "https://chrome.google.com/webstore/detail/hacktools/hbhiinjokladdniojmkkndofppfegnff" -O "$scriptpath/hacktools.crx" >/dev/null
+wget "https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi" -O "$scriptpath/hacktools.crx" >/dev/null
 
 # Checks whether to download user-agent list for User-Agent Switcher add-on.
 echo -n "[@] Would you like to download a user-agent list for the User-Agent Switcher add-on? [y/n]: "
