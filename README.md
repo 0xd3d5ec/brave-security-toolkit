@@ -2,6 +2,7 @@
 A tool that transforms Brave browser into a penetration testing suite. Take note this tool could also work with other chrome based browsers.
 
 # Why & How?
+Brave security toolkit is a as close as a direct relfection to firefox-security-toolkit as possible with other corresponding extensions for those who prefer to work with chrome based browsers when doing pentests or bug hunting. This tool was developed to speed up the setup process and let the user start right away with work without any hassle. It installs trusted tools by the community and setups the certificate installation process for burp and zap for the user so wishes.
 
 # Features
 - Installs most popular extensions used by the infosec community.
@@ -13,12 +14,14 @@ A tool that transforms Brave browser into a penetration testing suite. Take note
 Web-Application Penetration Testers, Information Security Learners, and basically anyone interested in web-application security.
 
 # Future Features
-
+- Any suggestions are welcomed.
+  
 # Compatibility
 - Unix/Linux
 
 # Usage
 bash ./brave-security-toolkit.sh
-or 
+</br>
 sudo chmod +x brave-security-tookit.sh
+</br>
 ./brave-security-toolkit.sh
