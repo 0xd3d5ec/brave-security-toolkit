@@ -107,11 +107,17 @@ echo -e "[*] Downloading Extensions."
 # Copy as PlainText
 wget "https://chrome.google.com/webstore/detail/copy-as-plain-text/hmjdnojobglgfjhfdeamomnjdlfcmogl" -O "$scriptpath/copy_as_plaintext.crx" >/dev/null
 
+# Dark Reader
+wget "https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh" -O "$scriptpath/dark_reader.crx" >/dev/null
+
+# IP Address and Domain Information
+wget "https://chrome.google.com/webstore/detail/ip-address-and-domain-inf/lhgkegeccnckoiliokondpaaalbhafoa" -O "$scriptpath/ip_address_domain_information.crx" >/dev/null
+
+# Proxy Switchy Omega
+wget "https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif" -O "$scriptpath/proxy_switchy_omega.crx" >/dev/null
+
 # FoxyProxy Standard
 wget "https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaabfmlnjonogaaifnjlfnp" -O "$scriptpath/foxyproxy_standard.crx" >/dev/null
-
-# Google Dork Builder
-wget "https://chrome.google.com/webstore/detail/google-dork-builder/fhgdndg" -O "$scriptpath/google_dork_builder.crx" >/dev/null
 
 # HackBar
 wget "https://chrome.google.com/webstore/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc" -O "$scriptpath/hackbar_v2.crx" >/dev/null
@@ -122,8 +128,8 @@ wget "https://chrome.google.com/webstore/detail/imacros-for-chrome/cplklnmnlbnpm
 # JSONView
 wget "https://chrome.google.com/webstore/detail/jsonview/gmegofmjomhknnokphhckolhcffdaihd" -O "$scriptpath/jsonview.crx" >/dev/null
 
-# KNOXSS Community Edition
-wget "https://chrome.google.com/webstore/detail/knoxss-community-edition/gbnmlkhgliejablgippglbkpkmjgiahp" -O "$scriptpath/knoxss_community_edition.crx" >/dev/null
+# Cookie Editor
+wget "https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm" -O "$scriptpath/cookie_editor.crx" >/dev/null
 
 # Shodan
 wget "https://chrome.google.com/webstore/detail/shodan/jjalcfnidlmpjhdfepjhjbhnhkbgleap" -O "$scriptpath/shodanio.crx" >/dev/null
